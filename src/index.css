@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 215 45% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 45% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 45% 12%;
+
+    --primary: 212 100% 22%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 211 100% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 0 100% 57% / 1;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 215 28% 93%;
+    --muted-foreground: 215 16% 47%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 28% 88%;
+    --input: 215 28% 88%;
+    --ring: 212 100% 22%;
+
+    --success: 152 60% 38%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --chart-1: 212 100% 22%;
+    --chart-2: 193 100% 43%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 152 60% 38%;
+    --chart-5: 280 65% 60%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 215 45% 7%;
+    --foreground: 210 40% 96%;
+
+    --card: 215 40% 10%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 215 40% 10%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 193 100% 43%;
+    --primary-foreground: 215 45% 7%;
+
+    --secondary: 211 100% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 193 100% 50%;
+    --accent-foreground: 215 45% 7%;
+
+    --muted: 215 30% 16%;
+    --muted-foreground: 215 20% 65%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 30% 20%;
+    --input: 215 30% 20%;
+    --ring: 193 100% 43%;
+
+    --success: 152 60% 42%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 55%;
+    --warning-foreground: 215 45% 7%;
+
+    --chart-1: 193 100% 43%;
+    --chart-2: 211 100% 45%;
+    --chart-3: 38 92% 55%;
+    --chart-4: 152 60% 50%;
+    --chart-5: 280 65% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .dark .glass {
+    background: rgba(15, 30, 50, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+  }
+  .dark .glass-strong {
+    background: rgba(15, 30, 50, 0.8);
+  }
+
+  .maritime-gradient {
+    background-image: linear-gradient(135deg, #003B73 0%, #0056B3 50%, #00B4D8 100%);
+  }
+  .text-gradient {
+    background-image: linear-gradient(135deg, #730000 0%, #0056B3 50%, #00B4D8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.4);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.6);
+}
+
+/* Swiper */
+.swiper-pagination-bullet {
+  background: hsl(var(--primary)) !important;
+  opacity: 0.3 !important;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background: hsl(var(--accent)) !important;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: hsl(var(--primary)) !important;
+}

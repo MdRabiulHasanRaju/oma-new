@@ -1,0 +1,12 @@
+import type { Facility } from '@/types';
+
+export const facilities: Facility[] = [
+  { id: '1', name: 'Full-Mission Bridge Simulator', description: 'A Kongsberg Polaris full-mission bridge simulator capable of 360-degree visualization, providing realistic navigation training in various sea conditions and ports worldwide.', icon: 'Ship', image: './images/Campus Facilities/Full-Mission Bridge Simulator.jpg' },
+  { id: '2', name: 'Engine Room Simulator', description: 'A high-fidelity engine room simulator replicating the operations of modern diesel and steam propulsion plants, enabling cadets to practice engine management and fault diagnosis.', icon: 'Cog', image: './images/Campus Facilities/Engine Room Simulator.jpg' },
+  { id: '3', name: 'Fire Fighting Training Ground', description: 'An outdoor fire fighting training facility with live fire props, smoke chambers, and breathing apparatus stations for realistic STCW fire fighting exercises.', icon: 'Flame', image: './images/Campus Facilities/Fire Fighting Training Ground.jpeg' },
+  { id: '4', name: 'Survival Craft Pool', description: 'A heated training pool equipped with lifeboats, liferafts, and rescue boats for practicing personal survival techniques and rescue boat operations.', icon: 'Waves', image: './images/Campus Facilities/Survival Craft Pool.jpg' },
+  { id: '5', name: 'Marine Workshop', description: 'A fully equipped marine workshop with lathes, milling machines, welding stations, and pipe fitting areas for hands-on engineering practical training.', icon: 'Wrench', image: './images/Campus Facilities/Marine Workshop.jpg' },
+  { id: '6', name: 'GMDSS Communication Lab', description: 'A dedicated GMDSS laboratory equipped with VHF, MF/HF, Inmarsat, and EPIRB equipment for training in maritime distress and safety communication.', icon: 'Radio', image: './images/Campus Facilities/GMDSS Communication Lab.png' },
+  { id: '7', name: 'Library & Resource Centre', description: 'A modern maritime library with over 15,000 volumes, IMO publications, e-resources, and study spaces for cadets and faculty.', icon: 'BookOpen', image: './images/Campus Facilities/Library & Resource Centre.jpg' },
+  { id: '8', name: 'Our Campus', description: 'A campus with modern hostels, dining facilities, gymnasium, sports grounds, and recreational areas for a comfortable cadet life.', icon: 'Building2', image: './images/Campus Facilities/oma-campus.png' },
+];
