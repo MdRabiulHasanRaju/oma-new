@@ -15,7 +15,7 @@ const values = [
 ];
 
 const profileStats = [
-  { icon: Building2, label: 'Founded', value: '2000' }, { icon: Users, label: 'Students', value: '1,200+' }, { icon: Award, label: 'Courses', value: '60+' }, { icon: Globe2, label: 'Global Alumni', value: '18,000+' },
+  { icon: Building2, label: 'Founded', value: '2012' }, { icon: Users, label: 'Students', value: '1,900+' }, { icon: Award, label: 'Courses', value: '85+' }, { icon: Globe2, label: 'Placement Support', value: '95%' },
 ];
 
 export default function About() {

@@ -27,7 +27,7 @@ export default function Facilities() {
         <div className="mx-auto max-w-7xl px-6">
           <SectionHeader eyebrow="Quality Assurance" title="Built to International Standards" description="All our facilities are designed and maintained in compliance with STCW, IMO, and ISO standards, ensuring our cadets train on equipment that mirrors real-world maritime operations." />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {[{ label: 'STCW Compliant', value: '100%' }, { label: 'Simulator Hours', value: '500+' }, { label: 'Workshop Area', value: '15,000 sqft' }, { label: 'Campus Area', value: '15 Acres' }].map((item, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="rounded-2xl border border-border bg-card p-6 text-center shadow-sm"><p className="font-display text-3xl font-extrabold text-accent">{item.value}</p><p className="mt-1 text-sm text-muted-foreground">{item.label}</p></motion.div>))}
+            {[{ label: 'STCW Compliant', value: '100%' }, { label: 'Simulator Hours', value: '500+' }, { label: 'Workshop Area', value: '5,000 sqft' }, { label: 'Campus Area', value: '2 Acres' }].map((item, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="rounded-2xl border border-border bg-card p-6 text-center shadow-sm"><p className="font-display text-3xl font-extrabold text-accent">{item.value}</p><p className="mt-1 text-sm text-muted-foreground">{item.label}</p></motion.div>))}
           </div>
         </div>
       </section>

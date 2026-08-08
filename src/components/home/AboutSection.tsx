@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { Anchor, ArrowRight, Play } from "lucide-react";
+import { Anchor, ArrowRight} from "lucide-react";
 import { Link } from 'react-router-dom';
 
 export default function AboutSection() {
