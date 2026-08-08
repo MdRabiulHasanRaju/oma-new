@@ -6,8 +6,10 @@ import { faculty } from "@/data/faculty";
 
 const departments = [
   "All",
-  "Navigation",
+  "Academic",
+  "Administration",
   "Engineering",
+  "Navigation",
   "Safety",
   "Maritime Studies",
 ];

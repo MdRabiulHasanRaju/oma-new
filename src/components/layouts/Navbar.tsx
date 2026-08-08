@@ -64,7 +64,7 @@ export default function Navbar() {
                 </Link>
                 <AnimatePresence>
                   {item.children && openMega === item.title && (
-                    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }} transition={{ duration: 0.2 }} className="bg-white rounded-2xl absolute left-0 top-full pt-2">
+                    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }} transition={{ duration: 0.2 }} className="bg-white rounded-2xl absolute left-0 top-full">
                       <div className="glass-strong w-64 rounded-2xl border border-border p-2 shadow-xl">
                         {item.children.map((child) => (
                           <Link key={child.title} to={child.href} className="block rounded-lg px-3 py-2.5 text-sm text-foreground/80 transition-colors hover:bg-accent/10 hover:text-accent">{child.title}</Link>
