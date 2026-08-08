@@ -236,7 +236,7 @@ const Hero = () => {
 
         <svg
           viewBox="0 0 1440 220"
-          className="w-full fill-white"
+          className="w-full fill-background"
         >
 
           <path d="M0,160L80,149.3C160,139,320,117,480,128C640,139,800,181,960,186.7C1120,192,1280,160,1360,144L1440,128L1440,320L0,320Z" />

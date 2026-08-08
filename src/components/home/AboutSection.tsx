@@ -1,9 +1,9 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Anchor, ArrowRight, Play } from "lucide-react";
 import { Link } from 'react-router-dom';
 
 export default function AboutSection() {
-    const [isPlaying, setIsPlaying] = useState(false);
+    // const [isPlaying, setIsPlaying] = useState(false);
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-background via-background to-muted/30 py-24">
       {/* Background Blur */}
@@ -80,47 +80,17 @@ export default function AboutSection() {
               <div className="aspect-video">
                 <iframe
                   className="h-full w-full"
-                  src={`https://www.youtube.com/embed/57o9T3NRfjI?${
-                        isPlaying ? "autoplay=1" : ""
-                }`}
+                  src={`https://www.youtube.com/embed/57o9T3NRfjI`}
                   title="Ocean Maritime Academy"
                   allow="autoplay; encrypted-media"
                   allowFullScreen
                 />
               </div>
 
-              {/* Floating Badge */}
-              <div className="absolute left-6 top-6 rounded-full border border-border bg-card/90 px-5 py-3 shadow-lg backdrop-blur-md">
-                <span className="text-sm font-semibold text-">
-                  International Maritime Training
-                </span>
-              </div>
-
-              {/* Play Card */}
-              {!isPlaying && (
-              <div onClick={() => setIsPlaying(true)} className="absolute bottom-24 left-6 right-6 rounded-2xl border border-white/20 bg-black/50 dark:bg-black/60 p-5 backdrop-blur-md">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-red-600 text-white shadow-lg">
-                    <Play size={22} fill="white" />
-                  </div>
-
-                  <div>
-                    <h4 className="text-lg font-semibold text-white">
-                      Watch Our Academy Story
-                    </h4>
-
-                    <p className="mt-1 text-sm text-slate-200">
-                      Discover our campus, maritime training, and future career
-                      opportunities.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              )}
             </div>
 
             {/* Floating Decorative Card */}
-            <div className="absolute -right-6 -bottom-6 rounded-2xl border border-border bg-card/80 px-6 py-5 shadow-xl backdrop-blur-xl">
+            <div className="absolute -right-6 -bottom-2 rounded-2xl border border-border bg-card/80 px-6 py-5 shadow-xl backdrop-blur-xl">
               <p className="text-sm font-semibold text-">
                 Excellence in Maritime Education
               </p>
